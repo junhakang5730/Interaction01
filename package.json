@@ -23,10 +23,5 @@
     "eslint-plugin-prettier": "^3.3.1",
     "husky": "^4.3.7",
     "prettier": "^2.2.1"
-  },
-  "husky":{
-    "hooks":{
-      "pre-commit":"echo \"이것은 커밋전에 출력됨\""
-    }
   }
 }
