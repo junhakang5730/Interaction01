@@ -46,15 +46,77 @@ table {
   border-spacing: 0;
 }
 
+.hidden {
+  margin-top: 40%;
+}
+
+.show {
+  margin-top: 20%;
+}
+
 .top {
   height: 100%;
   width: 100%;
   background-color: coral;
 }
 
+.top p {
+  margin-left: 30px;
+  padding-top: 60px;
+}
+
+.top span {
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 34px;
+  -webkit-transition-property: font-size transform;
+  transition-property: font-size transform;
+}
+
+.section {
+  height: 100%;
+}
+
+.two {
+  background-color: #222222;
+}
+
+.three {
+  background-color: #333333;
+}
+
+.three p {
+  display: inline-block;
+  text-align: center;
+  margin-top: 30vh;
+  font-size: 5rem;
+}
+
+.four {
+  background-color: #444444;
+}
+
+.five {
+  background-color: #555555;
+}
+
+.six {
+  background-color: #666666;
+}
+
+.seven {
+  background-color: #777777;
+}
+
 @media (min-width: 335px) and (max-width: 757px) {
+  html {
+    font-size: 16px;
+  }
   .top p {
-    color: red;
+    font-size: 16vw;
+  }
+  .top span {
+    size: 1;
   }
   .tabletContent {
     display: none;
@@ -62,15 +124,15 @@ table {
   .section {
     display: block;
   }
-  .text {
-    display: block;
-    width: 30%;
-    color: red;
-    background-color: coral;
-  }
 }
 
 @media (min-width: 758px) and (max-width: 1023px) {
+  .top p {
+    font-size: 130px;
+  }
+  .top span {
+    font-size: 70px;
+  }
   .mobileContent {
     display: none;
   }
