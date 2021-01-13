@@ -1,3 +1,4 @@
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -46,103 +47,125 @@ table {
   border-spacing: 0;
 }
 
-.hidden {
-  margin-top: 40%;
-}
-
-.show {
-  margin-top: 20%;
-}
-
-.top {
-  height: 100%;
-  width: 100%;
-  background-color: coral;
-}
-
-.top p {
-  margin-left: 30px;
-  padding-top: 60px;
-}
-
-.top span {
-  display: inline-block;
-  margin-left: 30px;
-  font-size: 34px;
-  -webkit-transition-property: font-size transform;
-  transition-property: font-size transform;
-}
-
-.section {
-  height: 100%;
-}
-
-.two {
-  background-color: #222222;
-}
-
-.three {
-  background-color: #333333;
-}
-
-.three p {
-  display: inline-block;
-  text-align: center;
-  margin-top: 30vh;
-  font-size: 5rem;
-}
-
-.four {
-  background-color: #444444;
-}
-
-.five {
-  background-color: #555555;
-}
-
-.six {
-  background-color: #666666;
-}
-
-.seven {
-  background-color: #777777;
-}
-
-@media (min-width: 335px) and (max-width: 757px) {
-  html {
-    font-size: 16px;
+@media (min-width: 758px) {
+  .GNB {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid #333333;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 4px 10px 0px 0,0,0,0.15;
+            box-shadow: 0px 4px 10px 0px 0,0,0,0.15;
   }
-  .top p {
-    font-size: 16vw;
+  .GNB .leftSide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid #333333;
   }
-  .top span {
-    size: 1;
+  .GNB .leftSide .logo {
+    display: inline-block;
+    margin: auto 0 auto 16px;
+    height: 25px;
+    width: 25px;
+    background-color: #333333;
   }
-  .tabletContent {
-    display: none;
+  .GNB .leftSide input {
+    margin: auto 0 auto 16px;
+    height: 25px;
   }
-  .section {
-    display: block;
+  .GNB .leftSide a {
+    padding: 16px;
   }
-}
-
-@media (min-width: 758px) and (max-width: 1023px) {
-  .top p {
-    font-size: 130px;
+  .GNB .rightSide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    border: 1px solid #333333;
+    width: 200px;
   }
-  .top span {
-    font-size: 70px;
+  .GNB .rightSide .notification, .GNB .rightSide .dropDown, .GNB .rightSide .profile {
+    display: inline-block;
+    margin: auto 16px auto 0;
+    height: 25px;
+    width: 25px;
+    background-color: #555555;
   }
-  .mobileContent {
-    display: none;
+  .bottom {
+    margin-top: 100px;
+    margin: 100px auto;
+    max-width: 1200px;
+    border: 1px solid #42B0FF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 500px;
   }
-  .section {
-    display: block;
-    background-color: coral;
+  .bottom .left {
+    -webkit-box-flex: 4;
+        -ms-flex-positive: 4;
+            flex-grow: 4;
+    height: 50px;
+    background-color: #77DE5D;
   }
-  .text {
-    color: #000000;
-    background-color: blue;
+  .bottom .left .botton-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50px;
+  }
+  .bottom .left .botton-area .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #FFD80B;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    height: 50px;
+  }
+  .bottom .left .botton-area .left .button {
+    background-color: #555555;
+    margin-left: 10px;
+    height: 25px;
+    width: 25px;
+  }
+  .bottom .left .botton-area .right {
+    background-color: #FFC165;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 50px;
+  }
+  .bottom .left .botton-area .right .button {
+    display: inline-block;
+    background-color: #555555;
+    margin-right: 10px;
+    height: 25px;
+    width: 25px;
+  }
+  .bottom .right {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 /*# sourceMappingURL=index.css.map */

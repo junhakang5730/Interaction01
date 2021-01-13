@@ -7,19 +7,26 @@
   
 
 
-@mixin tablet 
-  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) 
-    @content;
+// @mixin tablet 
+//   @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) 
+//     @content;
   
+
+
+// @mixin desktop 
+//   @media (min-width: #{$breakpoint-desktop}) 
+//     @content;
 
 
 @mixin desktop 
-  @media (min-width: #{$breakpoint-desktop}) 
+  @media (min-width: #{$breakpoint-tablet}) 
     @content;
-  
 
-// 초기화
-    html, body, div, span, applet, object, iframe,
+
+
+// 초기화 =============================================
+
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -63,86 +70,116 @@ table
 	border-spacing: 0
 
 
-// ========================================
-
-.hidden
-  margin-top: 40%
-
-.show
-  margin-top: 20%
-
-.top
-  height: 100%
-  width: 100%
-  background-color: coral
-  
-  p
-    margin-left: 30px
-    padding-top: 60px
-
-  span
-    display: inline-block
-    margin-left: 30px
-    font-size: 34px
-    transition-property: font-size transform
-
-.section
-  height: 100%
-.two
-  background-color: #222222
-.three
-  background-color: #333333
-  p
-    display: inline-block
-    text-align: center
-    margin-top: 30vh
-    font-size: 5rem
-.four
-  background-color: #444444
-.five
-  background-color: #555555
-.six
-  background-color: #666666
-.seven
-  background-color: #777777
+// 초기화 끝 ========================================
 
 
+
+
+
+
+
+// 모바일 =================================================
 
 @include mobile
 
-  html
-    font-size: 16px
-
-  .top 
-    p
-      font-size: 16vw
-    span
-      size: 1
-
-  .tabletContent
-    display: none
-  
-  .section
-    display: block
   
 
 
+// 데스크탑 =================================================
 
-@include tablet
-  .top
-    p
-      font-size: 130px
+@include desktop
+  
+  .GNB
+    display: flex
+    border: 1px solid #333333
+    justify-content: space-between
+    // height: 50px
+    background-color: #ffffff
+    box-shadow: 0px 4px 10px 0px 0,0,0,0.15
+
+    .leftSide
+      display: flex
+      border: 1px solid #333333
+
+      .logo
+        display: inline-block
+        margin: auto 0 auto 16px
+        height: 25px
+        width: 25px
+        background-color: #333333
+      
+      input
+        margin: auto 0 auto 16px
+        height: 25px
+
+      a
+        padding: 16px
+        // font-size: 24px
     
-    span
-      font-size: 70px
+    .rightSide
+      display: flex
+      justify-content: flex-end
+      border: 1px solid #333333
+      width: 200px
 
-  .mobileContent
-    display: none
+      .notification , .dropDown , .profile
+        display: inline-block
+        margin: auto 16px auto 0
+        height: 25px
+        width: 25px
+        background-color: #555555
+  
+  .bottom  
+    margin-top: 100px
+    margin: 100px auto
+    max-width: 1200px
+    border: 1px solid #42B0FF
+    display: flex
+    height: 500px
 
-  .section
-    display: block
-    background-color: coral
+    .left
+      flex-grow: 4
+      height: 50px
+      background-color: #77DE5D
 
-  .text
-    color: #000000
-    background-color: blue
+      .botton-area
+        display: flex
+        height: 50px
+
+        .left
+          display: flex
+          align-items: center
+          background-color: #FFD80B
+          flex-grow: 1
+          height: 50px
+
+          .button
+
+            background-color: #555555
+            margin-left: 10px
+            height: 25px
+            width: 25px
+
+        .right
+          background-color: #FFC165
+          flex-grow: 1
+          display: flex
+          align-items: center
+          justify-content: flex-end
+          height: 50px
+
+          .button
+            display: inline-block
+            background-color: #555555
+            margin-right: 10px
+            height: 25px
+            width: 25px
+    
+    .right
+      flex-grow: 1
+
+// 3EBCF1
+  
+
+    
+
